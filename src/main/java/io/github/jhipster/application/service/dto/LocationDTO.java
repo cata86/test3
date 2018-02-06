@@ -15,6 +15,8 @@ public class LocationDTO implements Serializable {
 
     private String streetAddress;
 
+    private String streetAddress2;
+
     private String postalCode;
 
     private String city;
@@ -37,6 +39,14 @@ public class LocationDTO implements Serializable {
 
     public void setStreetAddress(String streetAddress) {
         this.streetAddress = streetAddress;
+    }
+
+    public String getStreetAddress2() {
+        return streetAddress2;
+    }
+
+    public void setStreetAddress2(String streetAddress2) {
+        this.streetAddress2 = streetAddress2;
     }
 
     public String getPostalCode() {
@@ -97,6 +107,7 @@ public class LocationDTO implements Serializable {
         return "LocationDTO{" +
             "id=" + getId() +
             ", streetAddress='" + getStreetAddress() + "'" +
+            ", streetAddress2='" + getStreetAddress2() + "'" +
             ", postalCode='" + getPostalCode() + "'" +
             ", city='" + getCity() + "'" +
             ", stateProvince='" + getStateProvince() + "'" +

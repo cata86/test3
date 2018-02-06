@@ -16,6 +16,10 @@
             "fieldType": "String"
         },
         {
+            "fieldName": "streetAddress2",
+            "fieldType": "String"
+        },
+        {
             "fieldName": "postalCode",
             "fieldType": "String"
         },

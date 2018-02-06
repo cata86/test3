@@ -27,6 +27,9 @@ public class Location implements Serializable {
     @Column(name = "street_address")
     private String streetAddress;
 
+    @Column(name = "street_address_2")
+    private String streetAddress2;
+
     @Column(name = "postal_code")
     private String postalCode;
 
@@ -60,6 +63,19 @@ public class Location implements Serializable {
 
     public void setStreetAddress(String streetAddress) {
         this.streetAddress = streetAddress;
+    }
+
+    public String getStreetAddress2() {
+        return streetAddress2;
+    }
+
+    public Location streetAddress2(String streetAddress2) {
+        this.streetAddress2 = streetAddress2;
+        return this;
+    }
+
+    public void setStreetAddress2(String streetAddress2) {
+        this.streetAddress2 = streetAddress2;
     }
 
     public String getPostalCode() {
@@ -140,6 +156,7 @@ public class Location implements Serializable {
         return "Location{" +
             "id=" + getId() +
             ", streetAddress='" + getStreetAddress() + "'" +
+            ", streetAddress2='" + getStreetAddress2() + "'" +
             ", postalCode='" + getPostalCode() + "'" +
             ", city='" + getCity() + "'" +
             ", stateProvince='" + getStateProvince() + "'" +

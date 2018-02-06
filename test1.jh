@@ -10,6 +10,7 @@ entity Country {
 /** not an ignored comment */
 entity Location {
 	streetAddress String,
+    streetAddress2 String,
 	postalCode String,
 	city String,
 	stateProvince String
